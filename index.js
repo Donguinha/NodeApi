@@ -1,11 +1,14 @@
-const express = require('express');
-const app = express();
-const port = 3000;
+console.log("Hello World");
+console.error("erro");
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+alert("Welcome to the NodeApi project!");
 
-app.listen(port, () => {
-  console.log(`API rodando em http://localhost:${port}`);
-});
+let numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < 10; i++) {
+  console.log(numbers);
+
+  setTimeout(() => {
+    console.log(new Date());
+  }, 1000);
+}
